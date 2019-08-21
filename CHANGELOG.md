@@ -22,6 +22,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - Clarification on `include` and `exclude` parameters in the field extension and notes on default values.
 - API queries should contain either `bbox` or `intersects`.
 - Updated bbox definitions in API, Item, and Collection specs to include support for optional elevation values.
+- Updated UML diagram.
 
 ### Added
 - **stac_version**: Each Item must specify the STAC version.
