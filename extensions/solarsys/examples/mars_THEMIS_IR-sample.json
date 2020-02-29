@@ -91,7 +91,7 @@
     "ssys:instrument": "Thermal Emission Imaging System",
     "ssys:instrumentid": 558098,
 	"sys:idisplayname": "THEMIS",
-    "ssys:idescription": "THEMIS is an instrument on board the Mars Odyssey spacecraft. It combines a 5-wavelength visual imaging system with a 9-wavelength infrared imaging system.",
+    "ssys:idescription": "THEMIS is an instrument on board Mars Odyssey. It combines a 5-wavelength visual imaging system with a 9-wavelength infrared imaging system.",
     "ssys:targetid": 49900,
     "ssys:naifid": 499,
     "ssys:targetname": "Mars",
