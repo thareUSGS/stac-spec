@@ -26,18 +26,6 @@
             "ssys:source"
           ],
           "properties": {
-            "ssys:productid": {
-              "title": "Unique string identifier for PDS products",
-              "type": "string"
-            },
-            "ssys:source": {
-              "title": "path to the image file used for product creation",
-              "type": "string"
-            },
-            "ssys:upcid": {
-              "title": "Auto-incrementing integer ID for the target",
-              "type": "number"
-            },
             "ssys:mission": {
               "title": "The name of the mission on which the artifacts were created",
               "type": "string"
@@ -49,6 +37,138 @@
             "ssys:instrumentid": {
               "title": "Auto-incrementing integer ID for the instrument",
               "type": "number"
+            },
+            "ssys:idisplayname": {
+              "title": "The short name of the instrument formatted for display",
+              "type": "string"
+            },
+            "ssys:idescription": {
+              "title": "A description of the instrument",
+              "type": "string"
+            },
+            "ssys:targetid": {
+              "title": "Auto-incrementing integer ID for the target",
+              "type": "number"
+            },
+            "ssys:naifid": {
+              "title": "Holds the NAIF code for the barycenter of the target (e.g. the NAIF ID for Mars is 499)",
+              "type": "number"
+            },
+            "ssys:targetname": {
+              "title": "The name of the target (e.g. Mars)",
+              "type": "string"
+            },
+            "ssys:system": {
+              "title": "The system to which the target belongs (e.g. Phobos belongs to the Mars system)",
+              "type": "string"
+            },
+            "ssys:aaxisradius": {
+              "title": "The latest IAU-recommended a-radius for the given target. This is most always the semi-major radius",
+              "type": "number"
+            },
+            "ssys:baxisradius": {
+              "title": "The latest IAU-recommended b-radius for the given target",
+              "type": "number"
+            },
+            "ssys:caxisradius": {
+              "title": "The latest IAU-recommended a-radius for the given target. This is most always the semi-minor (or polar) radius",
+              "type": "number"
+            },
+            "ssys:productid": {
+              "title": "Unique string identifier for PDS products",
+              "type": "string"
+            },
+            "ssys:source": {
+              "title": "path to the image file used for product creation",
+              "type": "string"
+            },
+            "ssys:detached_label": {
+              "title": "A path to the detached label used for product creation",
+              "type": "string"
+            },
+            "ssys:upctime": {
+              "title": "The time at which the UPC product was entered into the UPC database",
+              "type": "number"
+            },
+            "ssys:upcid": {
+              "title": "Auto-incrementing integer ID for the target",
+              "type": "number"
+            },
+            "ssys:isisid": {
+              "title": "ISIS Serial Number",
+              "type": "number"
+            },
+            "ssys:level": {
+              "title": "The processing level of the product",
+              "type": "number"
+            },
+            "ssys:starttime": {
+              "title": "The time at which the image was taken",
+              "type": "string"
+            },
+            "ssys:solarlongitude": {
+              "title": "The Solar Longitude is the planetocentric longitude of the sun as seen from a point on a body. It is considered a seasonal angle. Also referred to as L_sub_S.",
+              "type": "number"
+            },
+            "ssys:meangroundresolution": {
+              "title": "Mean ground resolution from isis routine caminfo geometry group",
+              "type": "number"
+            },
+            "ssys:minimumemission": {
+              "title": "The emission angle (EMA) is the angle between the spacecraft and a vector drawn perpendicular to the planet's surface (surface normal). Using SPICE, ISIS applications compute this angle from the ellipsoid. Emission Angle is in degrees. The valid range is between 0 and 90.",
+              "type": "number"
+            },
+            "ssys:emissionangle": {
+              "title": "The emission angle (EMA) is the angle between the spacecraft and a vector drawn perpendicular to the planet's surface (surface normal). Using SPICE, ISIS applications compute this angle from the ellipsoid. Emission Angle is in degrees. The valid range is between 0 and 90.",
+              "type": "number"
+            },
+            "ssys:minimumincidence": {
+              "title": "The incidence angle (INC) is the angle between the sun and the surface normal. ISIS applications use SPICE to compute this angle from the ellipsoid or the elevation model (e.g., local slopes) at every pixel. Incidence Angle is in degrees. The valid range is between 0 - 90. Data can be illuminated beyond the 90 degrees in the deep terminator region. While this is valid, most photometric functions will not normalize beyond 90 degrees. Incidence Angle is in degrees",
+              "type": "number"
+            },
+            "ssys:incidenceangle": {
+              "title": "The incidence angle (INC) is the angle between the sun and the surface normal. ISIS applications use SPICE to compute this angle from the ellipsoid or the elevation model (e.g., local slopes) at every pixel. Incidence Angle is in degrees. The valid range is between 0 - 90. Data can be illuminated beyond the 90 degrees in the deep terminator region. While this is valid, most photometric functions will not normalize beyond 90 degrees. Incidence Angle is in degrees.",
+              "type": "number"
+            },
+            "ssys:maximumincidence": {
+              "title": "The incidence angle (INC) is the angle between the sun and the surface normal. ISIS applications use SPICE to compute this angle from the ellipsoid or the elevation model (e.g., local slopes) at every pixel. Incidence Angle is in degrees. The valid range is between 0 - 90. Data can be illuminated beyond the 90 degrees in the deep terminator region. While this is valid, most photometric functions will not normalize beyond 90 degrees. Incidence Angle is in degrees",
+              "type": "number"
+            },
+            "ssys:minimumphase": {
+              "title": "The phase angle is the angle between the sun and the spacecraft at a point on the surface. ISIS applications will use SPICE to compute this angle from the ellipsoid or the elevation model (e.g., local slopes) at every pixel. Phase Angle is in degrees.",
+              "type": "number"
+            },
+            "ssys:phaseangle": {
+              "title": "The phase angle is the angle between the sun and the spacecraft at a point on the surface. ISIS applications will use SPICE to compute this angle from the ellipsoid or the elevation model (e.g., local slopes) at every pixel. Phase Angle is in degrees.",
+              "type": "number"
+            },
+            "ssys:maximumphase": {
+              "title": "The phase angle is the angle between the sun and the spacecraft at a point on the surface. ISIS applications will use SPICE to compute this angle from the ellipsoid or the elevation model (e.g., local slopes) at every pixel. Phase Angle is in degrees.",
+              "type": "number"
+            },
+            "ssys:err_flag": {
+              "title": "Tracks the error status of a product",
+              "type": "string"
+            },
+            "ssys:columns": {
+              "title": "For an image, the number of columns (or samples)",
+              "type": "number"
+            },
+            "ssys:rows": {
+              "title": "For an image, the number of rows (or lines)",
+              "type": "number"
+            },
+            "ssys:bands": {
+              "title": "For an image the number of bands",
+              "type": "number"
+            },
+            "ssys:provider": {
+              "title": "The creator or provider of the original image data",
+              "type": "string"
+            },
+            "ssys:published": {
+              "title": "The time at which the image was published",
+              "type": "string"
             }
         },
         "assets": {

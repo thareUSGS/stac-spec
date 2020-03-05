@@ -1,17 +1,19 @@
 {
   "stac_version": "1.0.0",
   "stac_extensions": [
+      "commons",
       "eo",
       "view",
-      "solarsys",
-      "https://astrogeology.usgs.gov/stac/1.0/schema.json"
-  ],
-  "id": "THEMIS PSP",
-  "title": "THEMIS IR B9",
-  "description": "THEMIS 8bit controlled image.",
+      "solarsys"
+  ],    
+  "id": "I17446018",
+  "title": "THEMIS infrared Experimental Data Record",
+  "description": "THEMIS Infared 8bit controlled B9 image",
+  "license": "Public Domain",
   "keywords": [
     "Mars",
     "THEMIS",
+    "Infared Red",
     "IR",
     "controlled"
   ],
@@ -78,8 +80,7 @@
       "url": "Path to STAC AWS"
     }
   ],
-  "license": "NASA",
-  "id": "I17446018",
+
   "properties": {
     "datetime": "2005-11-19 20:43:09.008Z",
     "view:sun_azimuth": 262.65622,
@@ -90,7 +91,7 @@
     "ssys:spacecraft": "Mars Odyssey Spacecraft",
     "ssys:instrument": "Thermal Emission Imaging System",
     "ssys:instrumentid": 558098,
-	"ssys:idisplayname": "THEMIS",
+    "ssys:idisplayname": "THEMIS",
     "ssys:idescription": "THEMIS is an instrument on board Mars Odyssey. It combines a 5-wavelength visual imaging system with a 9-wavelength infrared imaging system.",
     "ssys:targetid": 49900,
     "ssys:naifid": 499,
@@ -99,21 +100,21 @@
     "ssys:aaxisradius": 3396190.0,
     "ssys:baxisradius": 3396190.0,
     "ssys:caxisradius": 3396190.0,
-    "ssys:source": "path to the image file used for product creation",
     "ssys:productid": "I17446018",
+    "ssys:source": "path to the image file used for product creation",
     "ssys:detached_label": "path to the detached label used for product creation",
     "ssys:upctime": "2005-11-19 20:43:09.008Z",
     "ssys:upcid": 4545098,
     "ssys:isisid": 343098098,
-    "ssys:level": 1,
+    "ssys:level": 2,
     "ssys:starttime": "2005-11-19 20:43:09.008",
     "ssys:solarlongitude": 326.92032,
     "ssys:meangroundresolution": 99.795,
     "ssys:minimumemission": 0.766,
     "ssys:emissionangle": 1.766746,
     "ssys:minimumincidence": 73.181,
-    "ssys:maximumincidence": 73.1812,
     "ssys:incidenceangle": 73.1812,
+    "ssys:maximumincidence": 73.1812,
     "ssys:minimumphase": 0.3,
     "ssys:phaseangle": 0.5,
     "ssys:maximumphase": 0.6,
@@ -184,7 +185,7 @@
 			"common_name": "Band 10",
 			"center_wavelength": 14.88,
 			"full_width_half_max": 0.87
-		},
+		}
 	]
   },
   "type": "Feature",
@@ -211,7 +212,7 @@
       "title": "Original Metadata",
       "description": "The original MTL metadata file provided for each THEMIS scene"
     },
-    "B1": {
+    "B9": {
       "type": "image/tiff; application=geotiff",
       "eo:bands": [
         8
