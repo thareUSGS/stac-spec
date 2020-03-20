@@ -1,0 +1,232 @@
+{
+    "stac_version": "1.0.0",
+    "stac_extensions": [
+      "commons",
+      "view",
+      "eo",
+      "solarsys"
+    ],
+    "id": "mo-themis-ir-edr-b9",
+    "title": "THEMIS Infrared Experimental Data Record",
+    "description": "THEMIS Infrared 8bit controlled images",
+    "keywords": [
+      "Mars",
+      "THEMIS",
+      "Infrared",
+      "IR",
+      "controlled"
+    ],
+    "extent": {
+      "spatial": {
+        "bbox": [
+          [
+            -180,
+            -90,
+            180,
+            90
+          ]
+        ]
+      },
+      "temporal": {
+        "interval": [
+          [
+            "2002-02-01T00:00:00Z",
+            "2020-03-01T00:00:00Z"
+          ]
+        ]
+      }
+    },
+    "providers": [
+      {
+      "name": "ASU",
+      "roles": [
+        "producer"
+      ],
+      "url": "https://viewer.mars.asu.edu/viewer/themis#T=0"
+      },
+      {
+        "name": "PDS",
+        "roles": [
+          "host"
+        ],
+        "url": "path to PDS THEMIS"
+      },
+      {
+        "name": "USGS",
+        "roles": [
+          "processor"
+        ],
+        "url": "path to UPC/STAC processing"
+      },
+      {
+        "name": "AWS",
+        "roles": [
+          "host"
+        ],
+        "url": "Path to STAC AWS"
+      }
+    ],
+    "license": "Public Domain",
+    "properties": {
+      "platform": "mro",
+      "instruments": "themis",
+      "view:off_nadir": 0,
+      "ssys:bands": 10,
+      "ssys:provider": "ASU",
+      "ssys:published": "2008-06-12",
+      "ssys:mission": "Mars Odyssey",
+      "ssys:spacecraft": "Mars Odyssey Spacecraft",
+      "ssys:instrument": "Thermal Emission Imaging System",
+      "ssys:instrumentid": 558098,
+      "ssys:idisplayname": "THEMIS",
+      "ssys:idescription": "THEMIS is an instrument on board Mars Odyssey. It combines a 5-wavelength visual imaging system with a 9-wavelength infrared imaging system.",
+      "ssys:targetid": 49900,
+      "ssys:naifid": 499,
+      "ssys:targetname": "Mars",
+      "ssys:system": "Mars",
+      "ssys:aaxisradius": 3396190.0,
+      "ssys:baxisradius": 3396190.0,
+      "ssys:caxisradius": 3396190.0,
+      "eo:gsd": 99.795,
+      "eo:bands": [
+        {
+			"name": "B1",
+			"common_name": "Band 1",
+			"center_wavelength": 6.78,
+			"full_width_half_max": 1.01
+		},
+		{
+			"name": "B2",
+			"common_name": "Band 2",
+			"center_wavelength": 6.78,
+			"full_width_half_max": 1.01
+		},
+		{
+			"name": "B3",
+			"common_name": "Band 3",
+			"center_wavelength": 7.93,
+			"full_width_half_max": 1.09
+		},
+		{
+			"name": "B4",
+			"common_name": "Band 4",
+			"center_wavelength": 8.56,
+			"full_width_half_max": 1.16
+		},
+		{
+			"name": "B5",
+			"common_name": "Band 5",
+			"center_wavelength": 9.35,
+			"full_width_half_max": 1.20
+		},
+		{
+			"name": "B6",
+			"common_name": "Band 6",
+			"center_wavelength": 10.21,
+			"full_width_half_max": 1.10
+		},
+		{
+			"name": "B7",
+			"common_name": "Band 7",
+			"center_wavelength": 11.04,
+			"full_width_half_max": 1.19
+		},
+		{
+			"name": "B8",
+			"common_name": "Band 8",
+			"center_wavelength": 11.79,
+			"full_width_half_max": 1.07
+		},
+		{
+			"name": "B9",
+			"common_name": "Band 9",
+			"center_wavelength": 12.57,
+			"full_width_half_max": 0.81
+		},
+		{
+			"name": "B10",
+			"common_name": "Band 10",
+			"center_wavelength": 14.88,
+			"full_width_half_max": 0.87
+		}
+      ]
+    },
+    "assets": {
+        "index": {
+            "type": "text/html",
+            "title": "HTML index page"
+        },
+        "thumbnail": {
+            "title": "Thumbnail image",
+            "type": "image/jpeg"
+        },
+        "B1": {
+            "type": "image/tiff; application=geotiff",
+            "eo:bands": [0],
+            "title": "Band 1"
+        },
+        "B2": {
+            "type": "image/tiff; application=geotiff",
+            "eo:bands": [1],
+            "title": "Band 2"
+        },
+        "B3": {
+            "type": "image/tiff; application=geotiff",
+            "eo:bands": [2],
+            "title": "Band 3"
+        },
+        "B4": {
+            "type": "image/tiff; application=geotiff",
+            "eo:bands": [3],
+            "title": "Band 4"
+        },
+        "B5": {
+            "type": "image/tiff; application=geotiff",
+            "eo:bands": [4],
+            "title": "Band 5"
+        },
+        "B6": {
+            "type": "image/tiff; application=geotiff",
+            "eo:bands": [5],
+            "title": "Band 6"
+        },
+        "B7": {
+            "type": "image/tiff; application=geotiff",
+            "eo:bands": [6],
+            "title": "Band 7"
+        },
+        "B8": {
+            "type": "image/tiff; application=geotiff",
+            "eo:bands": [7],
+            "title": "Band 8"
+        },
+        "B9": {
+            "type": "image/tiff; application=geotiff",
+            "eo:bands": [8],
+            "title": "Band 9"
+        },
+        "B10": {
+            "type": "image/tiff; application=geotiff",
+            "eo:bands": [9],
+            "title": "Band 10"
+        },
+    "links": [
+      {
+        "rel": "self",
+        "href": "path/to/catalog.json"
+      },
+      {
+        "rel": "parent",
+        "href": "path/to/parent.catalog.json"
+      },
+      {
+        "rel": "root",
+        "href": "path/to/parent.catalog.json"
+      },
+      {
+        "rel": "child",
+        "href": "path/to/subcatalog.json"
+      }
+    ]
+    }
+}
