@@ -1,0 +1,17 @@
+{
+	"stac_version": "1.0.0",
+	"id": "mo-themis-ir-stac",
+	"title": "THEMIS infrared Experimental Data Record",
+	"description": "STAC for THEMIS infrared 8bit controlled B9 images",
+	"links": [
+	    {
+	    "rel": "self",
+	    "href": "path/to/this/catalog.json"
+	    },
+	    {
+	    "rel": "root",
+	    "href": "./catalog.json",
+	    "child": "path/to/child/catalog.json"
+	    }
+	]
+}
