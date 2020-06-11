@@ -1,6 +1,6 @@
-# Electro-Optical Extension Specification
+# Solar System Extension Specification
 
-- **Title: Solar System**
+- **Title: Solar System (for planetary data holdings)**
 - **Identifier: ssys**
 - **Field Name Prefix: ssys**
 - **Scope: Item**
