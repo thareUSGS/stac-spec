@@ -1,4 +1,4 @@
-# Electro-Optical Extension Specification
+Solar System Extension Specification
 
 - **Title: Solar System**
 - **Identifier: ssys**
