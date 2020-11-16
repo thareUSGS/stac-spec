@@ -22,8 +22,6 @@
         "properties": {
           "type": "object",
           "required": [
-            "ssys:productid",
-            "ssys:source"
           ],
           "properties": {
             "ssys:mission": {
@@ -168,6 +166,10 @@
             },
             "ssys:published": {
               "title": "The time at which the image was published",
+              "type": "string"
+            },
+            "ssys:description": {
+              "title": "Description for the original image or derived product (e.g. controlled mosaic, orthoimage, digital elevation model)",
               "type": "string"
             }
         },

@@ -1,6 +1,6 @@
-# Solar System Extension Specification
+# Electro-Optical Extension Specification
 
-- **Title: Solar System (for planetary data holdings)**
+- **Title: Solar System**
 - **Identifier: ssys**
 - **Field Name Prefix: ssys**
 - **Scope: Item**
@@ -24,11 +24,14 @@ For defining view geometry of data, it is strongly recommended to use the [`view
 
 ## Item fields
 
+note: no fields are curretnly required.
+
 | Field Name       | Type                     | Description |
 | ---------------- | ------------------------ | ----------- |
-| ssys:productid   | string                   | **REQUIRED.** Unique string identifier for PDS products. |
-| ssys:source      | string URL | **REQUIRED.** A path to the image file used for product creation. |
-| ssys:targetname  | string                   | The name of the target. If not available the field should not be provided. |
+| ssys:productid   | string                   | **recommended when available** Unique string identifier for PDS products. |
+| ssys:source      | string URL | **recommended when available** A path to the image file used for product creation. |
+| ssys:targetname  | string                   | **recommended when available** The name of the target. If not available the field should not be provided. |
+| ssys:description | string                   | Description for the original image or derived product (e.g. controlled mosaic, orthoimage, digital elevation model)|
 
 ## Extensions
 
