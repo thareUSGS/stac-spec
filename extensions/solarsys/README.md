@@ -24,7 +24,7 @@ For defining view geometry of data, it is strongly recommended to use the [`view
 
 ## Item fields
 
-note: no fields are curretnly required.
+note: no fields are currently required.
 
 | Field Name       | Type                     | Description |
 | ---------------- | ------------------------ | ----------- |
